@@ -58,6 +58,8 @@ color: #3F96F3;
 
 .header__paragraph {
     margin: 0;
+    right: 80px;
+    bottom: 40px;
 }
 
 .nav {
