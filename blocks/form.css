@@ -2,7 +2,7 @@
   max-width: 385px;
 }
 
-.form-fieldset {
+.form fieldset {
   margin: 0;
   padding: 0;
   border: none;
@@ -19,7 +19,7 @@
 }
 
 .form__button {
-  border-bottom: 4px;
+  border-bottom: 4px solid #000;
   width: 100%;
   border: none;
   padding: 20px 0;
@@ -44,7 +44,7 @@
   height: 20px;
 }
 
-.form__label_type_chceckbox {
+.form__label_type_checkbox {
   display: flex;
   gap: 12px;
   justify-content: center;

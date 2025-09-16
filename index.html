@@ -16,14 +16,12 @@
     <title>Java Stop</title>
 
     <link rel="shortcut icon" href="./vendor/favicon.ico" type="image/x-icon" />
-
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -38,13 +36,13 @@
           />
           <ul class="nav__links">
             <li>
-              <a class="nav__link" href="#footer">Recipes</a>
+              <a class="nav__link" href="#recipes">Recipes</a>
             </li>
             <li>
-              <a class="nav__link" href="#footer">Book a table</a>
+              <a class="nav__link" href="#reservation">Book a table</a>
             </li>
             <li>
-              <a class="nav__link" href="#footer">Menu</a>
+              <a class="nav__link" href="#menu">Menu</a>
             </li>
             <li>
               <a class="nav__link" href="#footer">Contacts</a>
@@ -78,7 +76,7 @@
         </div>
       </header>
       <main class="content">
-        <section class="recipes">
+        <section class="recipes" id="recipes">
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">
             Check out some recipes we've collected for your home-brewing
@@ -92,7 +90,6 @@
                 height="315"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc?si=0lllY8S-RXHHbC-6"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
@@ -121,7 +118,7 @@
             </li>
           </ul>
         </section>
-        <section class="reservation">
+        <section class="reservation" id="reservation">
           <h2 class="reservation__title">Book a table</h2>
           <form class="reservation__form form">
             <fieldset class="form__fieldset">
@@ -136,24 +133,24 @@
                 />
               </label>
 
-              <label for="number of guests-input" class="form__label">
+              <label for="guests-input" class="form__label">
                 Number of guests *
                 <input
                   class="form__input"
-                  id="number of guests-input"
+                  id="guests-input"
                   type="number"
                   min="1"
                   max="8"
                   placeholder="1-8"
-                  required="number"
+                  required="no value"
                 />
               </label>
 
-              <label for="date & time-input" class="form__label">
+              <label for="datetime-input" class="form__label">
                 Date & time *
                 <input
                   class="form__label"
-                  id="date & time-input"
+                  id="datetime-input"
                   type="datetime-local"
                   required
                 />
@@ -166,18 +163,23 @@
                   id="email-input"
                   type="email"
                   placeholder="email@email.com"
-                  required="email"
+                  required
                 />
               </label>
             </fieldset>
             <button class="form__button">Book a table</button>
-            <label for="" class="form__label form__label_type_checkbox">
-              <input class="form__checkbox" type="checkbox" required="email" />
+            <label class="form__label form__label_type_checkbox">
+              <input
+                class="form__checkbox"
+                id="agree-checkbox"
+                type="checkbox"
+                required="email"
+              />
               I agree with the terms of use
             </label>
           </form>
         </section>
-        <section class="menu">
+        <section class="menu" id="menu">
           <h2 class="menu__title">Menu</h2>
           <p class="menu__subtitle">
             We brew coffee from locally roasted, Fairtrade certified beans and
@@ -261,7 +263,7 @@
             </li>
           </ul>
         </section>
-        <section class="about">
+        <section class="about" id="Contacts">
           <h2 class="about__title">About the coffee shop</h2>
           <div class="about__content">
             <p class="about__paragraph">
