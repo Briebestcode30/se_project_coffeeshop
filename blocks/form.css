@@ -2,7 +2,7 @@
   max-width: 385px;
 }
 
-.form fieldset {
+.form__fieldset {
   margin: 0;
   padding: 0;
   border: none;
