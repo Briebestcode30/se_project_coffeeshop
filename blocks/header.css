@@ -12,6 +12,7 @@
 }
 
 .header__title {
+  margin: 183px 0 0;
   max-width: 729px;
   font-weight: 500;
   font-size: 60px;
@@ -37,6 +38,7 @@
 .header__description {
   margin: 28px 0 0;
   max-width: 683px;
+  font-family: "Noto Serif" "Time New Rowman", serif;
   font-family: "Noto Serif", "Time New Rowman", serif;
   font-style: normal;
   font-weight: normal;
@@ -62,11 +64,4 @@
 .header__paragraph {
   margin: 0;
   right: 80px;
-  bottom: 40px;
-  font-family: "Inter", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #6f6f6f;
 }
