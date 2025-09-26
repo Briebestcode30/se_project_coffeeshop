@@ -3,8 +3,7 @@
   padding: 30px 80px 40px;
   background-color: #fff;
   position: relative;
-  background: #fff url(../images/images/background_header.svg) no-repeat
-    center/cover;
+  background: #fff url("../images/background_header.svg") no-repeat center/cover;
   height: 800px;
   display: flex;
   flex-direction: column;
@@ -51,11 +50,8 @@
 }
 
 .header__image {
-  position: absolute;
-  top: 124px;
-  right: 5px;
   width: 646px;
-  height: 568px;
+  display: block;
 }
 
 .header__footer {
